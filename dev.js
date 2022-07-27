@@ -169,7 +169,7 @@ function publicIPs(timer){
                         arr.push(possible_ips_array[i])
                     };
                 };
-                array.push({ ip:arr});
+                array.push(arr);
             };
         };
         // Final function that does more checks to determine the array's validity,
