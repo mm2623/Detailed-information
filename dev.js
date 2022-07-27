@@ -1,7 +1,6 @@
 /*
 *   This file is the entire script combined in working order.
 *   Copyright 2021 © Joey Malvinni
-*   I am just using his code just in case his server went down.
 *   License: MIT
 */
 
