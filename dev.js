@@ -145,7 +145,7 @@ function publicIPs(timer){
                     reject('No IP addresses were found.')
                 } else {
                     // Return the unique IP addresses in an array.
-                    resolve(unique(IPs.flat(Infinity)))
+                    resolve(unique({ ip:IPs.flat(Infinity)}))
                 };
                 // reset the peer connection.
                 reset();
