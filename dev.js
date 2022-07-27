@@ -145,7 +145,7 @@ function publicIPs(timer){
                     reject('No IP addresses were found.')
                 } else {
                     // Return the unique IP addresses in an array.
-                    resolve(unique({ ip:IPs.flat(Infinity)}))
+                    resolve(unique(IPs.flat(Infinity)))
                 };
                 // reset the peer connection.
                 reset();
@@ -169,7 +169,7 @@ function publicIPs(timer){
                         arr.push(possible_ips_array[i])
                     };
                 };
-                array.push(arr);
+                array.push({ ip:arr});
             };
         };
         // Final function that does more checks to determine the array's validity,
